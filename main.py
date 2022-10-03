@@ -815,15 +815,76 @@
 #         return res
 
 
-def findDups(nums):
-    for i in range(0, len(nums)):
-        if nums[i] == nums[i]:
-            arr2 = []
-            arr2.append(nums[i])
-            print(arr2)
-            return True
+# def findDups(nums):
+#     for i in range(0, len(nums)):
+#         if nums[i] == nums[i]:
+#             arr2 = []
+#             arr2.append(nums[i])
+#             print(arr2)
+#             return True
+#         else:
+#             return False
+# nums = [1, 2, 3, 1]
+# print(findDups(nums))
+
+# def sortAndFindRepitations(arr):
+#     s1, s2 = 0, len(arr)
+#     for i in arr:
+#         res = arr.sort()
+#         for j in range(arr):
+#             j -= 1
+#             if arr[i] == arr[j]:
+#                 print(arr[j])
+# arr = [1, 1, 3, 2]
+# print(sortAndFindRepitations(arr))
+
+# def containDuplicates(nums):
+#     size = len(nums)
+#     repeated = []
+#     for i in range(size):
+#         k = i + 1
+#         for j in range(k, size):
+#             if nums[i] == nums[j] and nums[i] not in repeated:
+#                 repeated.append(nums[i])
+#                 return True
+#     return False
+# nums = [1, 2, 3, 4]
+# print(containDuplicates(nums))
+
+# def dups(nums):
+#     return not len(nums) == len(set(nums))
+# nums = [1, 2, 3, 1]
+# print(dups(nums))
+
+def sort012(a, arr_size):
+    lo = 0
+    hi = arr_size - 1
+    mid = 0
+    # Iterate till all the elements
+    # are sorted
+    while mid <= hi:
+        # If the element is 0
+        if a[mid] == 0:
+            a[lo], a[mid] = a[mid], a[lo]
+            lo = lo + 1
+            mid = mid + 1
+        # If the element is 1
+        elif a[mid] == 1:
+            mid = mid + 1
+        # If the element is 2
         else:
-            return False
-nums = [1, 2, 3, 1]
-print(findDups(nums))
+            a[mid], a[hi] = a[hi], a[mid]
+            hi = hi - 1
+    return a
+# Function to print array
+def printArray(a):
+    for k in a:
+        print(k, end=' ')
+# Driver Program
+arr = [0, 2, 1, 2, 0]
+arr_size = len(arr)
+arr = sort012(arr, arr_size)
+printArray(arr)
+
+
 
