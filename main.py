@@ -31,6 +31,7 @@
 #
 # print(convert("04:00:00 PM"))
 
+
 # 3). Multiway selection in python
 
 # def add(numb1, numb2):
@@ -61,6 +62,7 @@
 #     print(numb1, "/", numb2, "=", divide(numb1, numb2))
 
 
+
 # 4). Calculate the string A and calculate the string B total
 
 # word_count = 0
@@ -72,6 +74,7 @@
 #     char_count = len(i)
 #     print("Total words: {} ".format(word_count))
 #     print("Total chars is : {}".format(char_count))
+
 
 # 5). Tower of Hanoi
 
@@ -87,6 +90,7 @@
 #
 # n = 4
 # towerOfHanoi(n, 'A', 'B', 'C')
+
 
 # Unit 2
 # 1). Tuple functions
@@ -110,6 +114,7 @@
 # res2 = min(list)[1], max(list)[1]
 # print(str(res1))
 # print(str(res2))
+
 
 
 # import calendar
@@ -139,6 +144,8 @@
 # else:
 #     print("Element is not present in array")
 
+
+
 # 4). Count and sum the even and odd number
 
 # maximum= int(input("Max"))
@@ -153,6 +160,8 @@
 #
 # print("{0} = {1}". format(i, even_total))
 # print("{0} = {1}". format(i, odd_total))
+
+
 
 # 4). ii). linear search
 
@@ -169,6 +178,8 @@
 #     print("No")
 # else:
 #     print(result)
+
+
 
 # Unit 3
 # 1). Duplicate chars in string
@@ -188,6 +199,8 @@
 # print(removeDuplicate(list(str), n))
 
 
+
+
 #  2). Palindrome
 
 # def isPalindrome(s):
@@ -198,6 +211,8 @@
 #     print("palindrome")
 # else:
 #     print("not a palindrome")
+
+
 
 # from collections import Counter
 # def winner(input):
@@ -220,8 +235,12 @@
 #  'john']
 #  winner(input)
 
+
+
 #################################################################################
 #################################################################################
+
+
 
 
 # Data structures and algorithms practice
@@ -239,6 +258,7 @@
 #         curr = nxt
 #     return prev
 
+
 # Pivot index
 # def pivotIndex(nums):
 #     total = sum(nums)
@@ -251,6 +271,7 @@
 #     return -1
 # nums = [1,7,3,6,5,6]
 # print(pivotIndex(nums))
+
 
 # Isomorphic string:
 # def isomorphicStrings(s, t):
@@ -268,6 +289,7 @@
 # print(isomorphicStrings(s, t))
 
 
+
 # Reverse linked
 # def reverseLinked(head):
 #     prev, curr = None, head
@@ -278,6 +300,7 @@
 #         prev = curr
 #         curr = nxt
 #     return prev
+
 
 
 #  Subsequence
@@ -293,6 +316,7 @@
 # t = "abdc"
 # print(isSubsequence(s, t))
 
+
 # Sum of 1d array
 # def runningSum(nums):
 #     for i in range(1, len(nums)):
@@ -300,6 +324,8 @@
 #     return nums
 # nums = [1,2,3,4,5]
 # print(runningSum(nums))
+
+
 
 # Pivot index
 # def pivotIndex(num):
@@ -316,6 +342,8 @@
 #
 # num = [1,7,3,6,5,6]
 # print(pivotIndex(num))
+
+
 
 # Merge two sorted list
 
@@ -347,6 +375,7 @@
 # Solution.mergeList(l1, l2)
 
 
+
 # Profit and loss in a stock
 #     import collections
 #     from typing import List
@@ -367,6 +396,7 @@
 # # prices = [7,1,5,3,6,4]
 # # print(profitStock(prices))
 # print(Solution.maxProfit(prices=[7,1,5,3,6,4]))
+
 
 
 # Longest Palindrome
@@ -396,6 +426,7 @@
 # print(Solution.longestPalindrome(s))
 
 
+
 # Tree preorder traversal
 
 # def preOrderTraversal(s, root):
@@ -408,6 +439,8 @@
 #             dfs(i)
 #     dfs(root)
 #     return output
+
+
 
 # Binary tree level order traversal
 
@@ -429,6 +462,8 @@
 #             res.append(level)
 #     return res
 
+
+
 # N ary tree using breath for search algorothm
 # class Node:
 #     def __init__(self, val=None, children=None):
@@ -446,6 +481,8 @@
 #                 naryTree(i)
 #             naryTree(root)
 #             return output
+
+
 
 # Binary tree order traversal
 # import collections
@@ -467,6 +504,8 @@
 #             res.appent(level)
 #     return res
 #
+
+
 
 # Binary search
 
@@ -490,6 +529,8 @@
 # target = 2
 # print(binarySearch(nums, target))
 
+
+
 # Binary search
 # def binarySearch(nums, target):
 #     l, r = 0, len(nums) - 1
@@ -506,6 +547,8 @@
 # nums = [1, 2, 3, 4, 5 ]
 # target = 2
 # print(binarySearch(nums, target))
+
+
 
 # Bad version
 
@@ -526,6 +569,8 @@
 # target = 4
 # print(firstBadVersion(n, target))
 
+
+
 # def loop(x):
 #     print(x*3)
 #
@@ -539,6 +584,8 @@
 # print(newFruit)
 # print(list[1:-4])
 
+
+
 # Binary Search Tree
 
 # def binarySearchTree(node, left, right):
@@ -548,6 +595,8 @@
 #         return False
 #       return (binarySearchTree(node.left, left, node.val) and binarySearchTree(node.right, right, node.val))
 #  return (binarySearchTree(root, float(-inf) and binarySearchTree(float(inf))
+
+
 
 # Lowest common ancestor of Binary Search Tree
 
@@ -567,12 +616,16 @@
 #         else:
 #             return curr
 
+
+
 # class Human:
 #     def __init__(self, name, age):
 #         self.name = name
 #         self.age = age
 # h1 = Human('Nich', 21)
 # print(h1.age)
+
+
 
 # def square(x):
 #     return x * x
@@ -581,6 +634,8 @@
 #
 # listSquares = map(square, numbers)
 # print(list(listSquares))
+
+
 
 
 # def complainManagemant(complain):
@@ -595,6 +650,8 @@
 # save = []
 # print(complainManagemant(complain))
 
+
+
 # def generateIp(s):
 #
 #     if s == " ":
@@ -605,6 +662,8 @@
 # # Main
 # s = print(int(input()))
 # print(generateIp(s))
+
+
 
 # def characterReplacement(s, k):
 #     count = {}
@@ -640,6 +699,8 @@
 #         if sCount == pCount:
 #             res.append(l)
 #     return res
+
+
 
 # class Solution:
 #     def twoSum(nums, target):
