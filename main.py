@@ -816,16 +816,26 @@
 
 
 # def findDups(nums):
-#     for i in range(0, len(nums)):
-#         if nums[i] == nums[i]:
-#             arr2 = []
-#             arr2.append(nums[i])
-#             print(arr2)
-#             return True
-#         else:
-#             return False
+#     i, j = 0, len(nums)
+#     for i in range(nums[i]):
+#         i += 1
+#         print(i)
+#         for j in range(nums[j]):
+#             j -= 1
+#             print(j)
+#             if nums[i] == nums[j]:
+#                 arr2 = []
+#                 arr2.append(nums[i])
+#                 print(arr2)
+#                 return True
+#             else:
+#                 arr2 = []
+#                 arr2.append(i)
+#                 print(arr2)
+#                 return False
 # nums = [1, 2, 3, 1]
 # print(findDups(nums))
+#
 
 # def sortAndFindRepitations(arr):
 #     s1, s2 = 0, len(arr)
@@ -856,35 +866,82 @@
 # nums = [1, 2, 3, 1]
 # print(dups(nums))
 
-def sort012(a, arr_size):
-    lo = 0
-    hi = arr_size - 1
-    mid = 0
-    # Iterate till all the elements
-    # are sorted
-    while mid <= hi:
-        # If the element is 0
-        if a[mid] == 0:
-            a[lo], a[mid] = a[mid], a[lo]
-            lo = lo + 1
-            mid = mid + 1
-        # If the element is 1
-        elif a[mid] == 1:
-            mid = mid + 1
-        # If the element is 2
-        else:
-            a[mid], a[hi] = a[hi], a[mid]
-            hi = hi - 1
-    return a
-# Function to print array
-def printArray(a):
-    for k in a:
-        print(k, end=' ')
-# Driver Program
-arr = [0, 2, 1, 2, 0]
-arr_size = len(arr)
-arr = sort012(arr, arr_size)
-printArray(arr)
+# def sort012(arr, arr_size):
+#     lo = 0
+#     hi = arr_size - 1
+#     mid = 0
+#     while mid <= hi:
+#         if arr[mid] == 0:
+#             arr[lo], arr[mid] = arr[mid], arr[lo]
+#             lo = lo + 1
+#             mid = mid + 1
+#         elif arr[mid] == 1:
+#             mid = mid + 1
+#         else:
+#             arr[mid], arr[hi] = arr[hi], arr[mid]
+#             hi = hi - 1
+#     return arr
+# def printArray(arr):
+#     for k in arr:
+#         print(k, end=' ')
+# # Main
+# arr = [0, 1, 0]
+# arr_size = len(arr)
+# arr = sort012(arr, arr_size)
+# printArray(arr)
+
+# def anagram(s, t):
+#     if len(s) != len(t):
+#         return False
+#     countS, countT = {}, {}
+#
+#     for i in range(len(s)):
+#         countS[s[i]] = 1 + countS.get(s[i], 0)
+#         countT[t[i]] = 1 + countT.get(t[i], 0)
+#     return countS == countT
+# s = "rat"
+# t = "car"
+# print(anagram(s, t))
+
+# def addTwoLinkedLists(l1, l2):
+#     head = None
+#     temp = None
+#     carry = 0
+#     while l1 is not None or l2 is not None:
+#         sum_value = carry
+#         if l1 is not None:
+#             sum_value = l1.val
+#             l1 = l1.next
+#         if l2 is not None:
+#             sum_value = l2.val
+#             l2 = l2.next
+#         node = ListNode(sum_value % 10)
+#         carry = sum_value // 10
+#
+#         if temp is None:
+#             temp = head = node
+#         else:
+#             temp.next = node
+#             temp = temp.next
+#     if carry > 0:
+#         temp.next = ListNode(carry)
+#     return head
+#
+
+# def inpMatrix():
+#     rows = int(input())
+#     column = int(input())
+#     dummy = []
+#     print("Please enter the entries: ")
+#     for i in range(rows):
+#         r = []
+#         for j in range(column):
+#             r.append(int(input()))
+#         dummy.append(r)
+#     for i in range(rows):
+#         for j in range(column):
+#             print(dummy[i][j], end =" ")
+#         print()
 
 
 
